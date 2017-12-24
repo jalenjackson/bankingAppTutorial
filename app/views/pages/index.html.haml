@@ -1,0 +1,17 @@
+= content_for(:title, 'Welcome To Your Online Banking')
+
+%h1
+  My Bank
+
+.row
+  .col-md-12
+    %h2
+      Number Of Accounts #{number_of_accounts}
+    %h2
+      Number Of Clients #{number_of_users}
+
+.row
+  .col-md-12
+    = link_to bank_accounts_path do
+      %i.fa.fa-building
+      Bank Accounts
